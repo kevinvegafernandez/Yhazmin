@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <title>Hz agency</title>
+      <link rel="icon" href="https://www.gravoc.com/wp-content/uploads/2015/08/Hat-01-2561.png" type="image/png">
+
+</head>
+<body>
+    <!-- HOME -->
+    <section id="home" class="home">
+        <header>
+            <a href="#" class="logo">
+                <span class="barra-logo">/</span>
+                <span class="texto">Yhazmin HC</span>
+            </a>
+            <div class="menu" onclick="verMenu()">
+                <span>MENU</span>
+                <div class="barras">
+                    <div class="linea efecto"></div>
+                    <div class="linea"></div>
+                    <div class="linea efecto"></div>
+                </div>
+            </div>
+            <!-- Menu desplegable -->
+            <nav id="nav" class="nav-menu">
+                    <a href="#home" onclick="cerrar()">Inicio</a>
+                    <a href="#portfolio" onclick="cerrar()" >Fotos</a>
+                    <a href="#sobremi" onclick="cerrar()">Sobre Mí</a>
+                    <a href="#habilidades" onclick="cerrar()">Habilidades</a>
+                    <a href="#testimonios" onclick="cerrar()">Testimonios</a>
+                   <button onclick="cerrar()"><i class="fa-solid fa-xmark"></i></button>
+            </nav>
+        </header>
+        <div class="contenido">
+            <h2 class="titulo-seccion headline load-hidden"></h2>
+            <h2 class="color">Reinas del Juego de las Sombras</h2>
+            <p class="descripcion">Desvelando los Secretos <span class="color">de la Manipulación</span> Masculina</p>
+
+            <div class="redes">
+                <a href="https://www.instagram.com/yhazmin_05/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@yhazmin__5"><i class="fa-brands fa-tiktok"></i></a>  
+                <a href="https://discord.gg/yhazmin_05"><i class="fa-brands fa-discord"></i></a>   
+            </div>
+        </div>
+    </section>
+
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="titulo-seccion headline load-hidden">Galeria:</h2>
+        <div class="fila">
+            <div class="col">
+                <div class="info">
+                    <h3 class="titulo-proyecto">Energética</h3>
+                    <p class="descripcion-proyecto">Siempre  estoyllena de vitalidad y lista para enfrentar cualquier desafío.</p>
+                </div>
+                <img src="img/proyecto1.jpeg" alt="" class="img-proyecto">
+            </div>
+            <div class="col">
+                <div class="info">
+                    <h3 class="titulo-proyecto">Saludable</h3>
+                    <p class="descripcion-proyecto"> Mi estilo de vida se centra en el bienestar físico y mental.</p>
+                </div>
+                <img src="img/proyecto2.jpeg" alt="" class="img-proyecto">
+            </div>
+        </div>
+        <div class="fila">
+            <div class="col">
+                <div class="info">
+                    <h3 class="titulo-proyecto">Optimista</h3>
+                    <p class="descripcion-proyecto">Veo el lado positivo de la vida, incluso en situaciones difíciles.</p>
+                </div>
+                <img src="img/proyecto3.jpeg" alt="" class="img-proyecto">
+            </div>
+            <div class="col">
+                <div class="info">
+                    <h3 class="titulo-proyecto">Expresiva</h3>
+                    <p class="descripcion-proyecto">Siempe digo lo que siento.</p>
+                </div>
+                <img src="img/proyecto4.jpeg" alt="" class="img-proyecto">
+            </div>
+        </div>
+        <div class="fila">
+            <div class="col">
+                <div class="info">
+                    <h3 class="titulo-proyecto">Divertida</h3>
+                    <p class="descripcion-proyecto">Encuentro la diversión en las pequeñas cosas</p>
+                </div>
+                <img src="img/proyecto5.jpeg" alt="" class="img-proyecto">
+            </div>
+            <div class="col">
+                <div class="info">
+                    <h3 class="titulo-proyecto">sociable</h3>
+                    <p class="descripcion-proyecto">Me encanta Hablar con otras personas.</p>
+                </div>
+                <img src="img/proyecto6.jpeg" alt="" class="img-proyecto">
+            </div>
+        </div>
+    </section>
+    
+    <!--  SOBRE MI -->
+    <section class="sobre-mi" id="sobremi">
+        <h2 class="titulo-seccion negro">Sobre Mí</h2>
+        <h3>Soy Yhazmin <span class="linea"></span></h3>
+        <h4 class="descripcion">
+            Soy Yhazmin, una <a href="#"><span class="efecto"> </span>chica fitnes</a> que vive en Huaraz. Me gustan mucho los gatitos y los regalos. <a href="#"><span class="efecto"> </span>Unete, a mi priv </a>,  y disfruta todos los beneficios que seran solo para un numero  <a href="#"><span class="efecto"> </span> limitado de personas</a>.
+        </h4>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="habilidades" id="habilidades">
+        <h2 class="titulo-seccion">Planes del Priv</h2>
+        <div class="fila">
+            <div class="menu">
+                <ul>
+                    <li id = "1" class="selected" onclick="mostrar(this)">Branding Digital</li>
+                    <li id = "2" onclick="mostrar(this)" class="">Gráfico de Movimientos</li>
+                    <li id = "3" onclick="mostrar(this)">Diseño UI/UX</li>
+                    <li id = "4" onclick="mostrar(this)">Desarrollo Web</li>
+                </ul>
+            </div>
+            <div class="info">
+                <div class="detalle" id="info1">
+                    <div class="fila-detalle">
+                        <div class="col-detalle">
+                            <i class="fa-solid fa-suitcase-medical"></i>
+                            <h4>Soprte a los clientes las 24/7</h4>
+                            <p>Servicio ininterrumpido, los 7 días de la semana.</p>
+                        </div>
+                        <div class="col-detalle">
+                            <i class="fa-brands fa-html5"></i>
+                            <h4>Atención al Cliente en Tiempo Real</h4>
+                            <p>Nuestro equipo de atención al cliente está listo para ayudarte en cualquier momento del día.</p>
+                        </div>
+                    </div>
+                    <div class="fila-detalle">
+                        <div class="col-detalle">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <h4>Proceso de Compra Simplificado</h4>
+                            <p>Realiza compras y transacciones fácilmente, incluso fuera del horario comercial convencional.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detalle" id="info3">
+                    <div class="fila-detalle">
+                        <div class="col-detalle">
+                            <i class="fa-solid fa-suitcase-medical"></i>
+                            <h4>24/7 Soprte a clientes</h4>
+                            <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+                        </div>
+                        <div class="col-detalle">
+                            <i class="fa-brands fa-html5"></i>
+                            <h4>Temas WP para HTML</h4>
+                            <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+                        </div>
+                    </div>
+                    <div class="fila-detalle">
+                        <div class="col-detalle">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <h4>Diseño de Interfaces</h4>
+                            <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="detalle" id="info4">
+                    <div class="fila-detalle">
+                        <div class="col-detalle">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <h4>Proceso de Compra Simplificado</h4>
+                            <p>Realiza compras y transacciones fácilmente, incluso fuera del horario comercial convencional.</p>
+                        </div>
+                        <div class="col-detalle">
+                            <i class="fa-solid fa-bezier-curve"></i>
+                            <h4>Seguridad y Confianza</h4>
+                            <p>Tu seguridad es nuestra máxima prioridad. Puedes confiar en que tus datos están protegidos en todo momento. </p>
+                        </div>
+                    </div>
+                    <div class="fila-detalle">
+                        <div class="col-detalle">
+                            <i class="fa-brands fa-apple"></i>
+                            <h4>Privacidad</h4>
+                            <p>Políticas de privacidad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonios" id="testimonios">
+        <h2 class="titulo-seccion">Beneficios</h2>
+        <div class="division">
+            <div class="col col1">
+            </div>
+            <div class="col col2">
+            </div>
+        </div>
+        <div class="fila">
+            <div class="titulo">
+               <h3>De La  <br> Suscrpciòn <span class="linea"></span></h3>
+            </div>
+            <div class="cliente">
+                <div class="contenedor-img">
+                    <img src="img/cliente1.png" alt="" id="imgCliente">
+                </div>
+                <button class="siguiente" onclick="siguiente()">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="opinion">
+                <h3 id="tituloCliente">Vip 1 !</h3>
+                <p id="txtCliente">Sesión de preguntas: Realiza sesiones interactivas</p>
+                <p id="txtCliente">Descuentos y Ofertas Exclusivas</p>
+                <p id="txtCliente">Colaboraciones Exclusivas</p>
+                <p id="txtCliente">Concursos y Sorteos Exclusivos</p>
+                <p id="txtCliente">Ver una película por Discord</p>
+                <p id="txtCliente">Videollamadas personales</p>
+                <p id="txtCliente">Mensajes de voz</p>
+                <p id="txtCliente">Saludos personalizados</p>
+
+                
+        </div>
+    </section>
+
+    
+    <script src="app.js"></script>
+</body>
+</html>
